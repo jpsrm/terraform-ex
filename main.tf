@@ -1,14 +1,14 @@
 provider "aws" {
-  region  = var.aws_region
+  region  = "us-east-1"
 }
 variable "acc_no" {
-  type = string
+  default = "181770501629"
 }
 variable "access_key" {
-  type = string
+  default = "AKIASUUS5XX652Q62USQ"
 }
 variable "secret_access_key" {
-  type = string
+  default = "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"
 }
 resource "aws_iam_user" "sowmi"{
     name = "sowmi"
